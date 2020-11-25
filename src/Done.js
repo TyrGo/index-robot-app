@@ -1,15 +1,13 @@
 import React from "react";
 import { Card, CardBody, CardTitle } from "reactstrap";
 
-function Error() {
+function Done() {
   return (
-    <section className="col-md-8">
+    <section className="col-12 col-md-8">
       <Card>
         <CardBody className="text-center">
           <CardTitle>
-            <h3 className="font-weight-bold">
-              We're sorry! Something went wrong.
-            </h3>
+            <h4>Check your email in a min or so</h4>
           </CardTitle>
         </CardBody>
       </Card>
@@ -17,4 +15,4 @@ function Error() {
   );
 }
 
-export default Error;
+export default Done;
