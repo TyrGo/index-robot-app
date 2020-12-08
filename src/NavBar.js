@@ -11,13 +11,13 @@ function NavBar() {
       <Navbar expand="md">
         <Nav className="ml-auto" navbar>
           <NavItem>
-            <NavLink exact to="/">Home</NavLink>
+            <NavLink exact to="/">home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink exact to="/help">Help</NavLink>
+            <NavLink exact to="/help">help</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink exact to="/about" >About</NavLink>
+            <NavLink exact to="/about" >about</NavLink>
           </NavItem>
         </Nav>
       </Navbar>

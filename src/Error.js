@@ -8,7 +8,7 @@ function Error() {
         <CardBody className="text-center">
           <CardTitle>
             <h3 className="font-weight-bold">
-              We're sorry! Something went wrong.
+              we're sorry! something went wrong
             </h3>
           </CardTitle>
         </CardBody>

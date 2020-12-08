@@ -25,6 +25,21 @@ main {
   text-align: left;
 }
 
+.image {
+    height: 10em;
+    border-radius: 40%;
+    mask: url(mask.svg);
+}
+
+.txtpic {
+    height: 100px;
+}
+
+.help {
+    margin: 0%;
+    margin-left: 20%;
+}
+
 h3 {
   color: rgba(16, 16, 16, 0.904);
   font-family: Courier, monospace;
@@ -36,6 +51,20 @@ p {
   font-size: medium;
   font-family: Courier, monospace;
   text-align: justify;
+}
+
+.thanks {
+    text-align: center;
+
+}
+
+.bios {
+  display: flex;
+  align-items: center;
+}
+
+.bio {
+    padding: 3%;
 }
 
 h4 {
@@ -96,4 +125,18 @@ h4 {
 .form {
   display: flex;
   justify-content: center;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
+  background: black;
+  opacity: 0.3;
+  position: absolute;
+  z-index: 0;
+  text-align: center;
+  margin: 0%;
 }
