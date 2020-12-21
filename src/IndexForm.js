@@ -14,7 +14,7 @@ function IndexForm() {
       evt.target.setCustomValidity('');
       value = evt.target.files[0];
 
-      if (value.name && !value.name.endsWith(".pdf")) {
+      if (!value?.name?.endsWith(".pdf")) {
         evt.target.setCustomValidity('Please upload a .pdf file');
       }
     }
@@ -23,7 +23,7 @@ function IndexForm() {
       evt.target.setCustomValidity('');
       value = evt.target.files[0];
 
-      if (value.name && !value.name.endsWith(".txt")) {
+      if (!value?.name?.endsWith(".txt")) {
         evt.target.setCustomValidity('Please upload a .txt file');
       }
     }
@@ -75,7 +75,7 @@ function IndexForm() {
                 />
               </FormGroup>
               <br />
-              <Button>Submit</Button>
+              <Button>submit</Button>
             </Form>
           </CardTitle>
         </CardBody>

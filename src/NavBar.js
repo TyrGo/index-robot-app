@@ -17,6 +17,9 @@ function NavBar() {
             <NavLink exact to="/help">help</NavLink>
           </NavItem>
           <NavItem>
+            <NavLink exact to="/donate">donate</NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink exact to="/about" >about</NavLink>
           </NavItem>
         </Nav>

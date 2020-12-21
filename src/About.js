@@ -5,15 +5,18 @@ function About() {
   return (
     <section className="col-md-8">
       <Card>
-        <CardTitle>
+        <CardBody className="text-center">
+          <CardTitle>
             <h3 className="font-weight-bold">
               about
             </h3>
-        </CardTitle>
-        <CardBody className="text-center">
-          <p className="thanks">
-            thank you for using our index machine
+          </CardTitle>
+          <p className="about">
+            our index robot helps make your book index. submit your book and
+            entries, and it emails you a neat index ordered. click the <b>help</b> tab for more details
           </p>
+          <br />
+          <br />
           <div>
             <div className="bios">
               <img className="image" src="https://philpeople.org/assets/storage/y5/cg/variants/y5cgC4raPCC6FkycaHBwQb58/257c61d87e22f766aa744f898d860cda70552b9b68cc6d2d47b0c7ea73b83e5c" />

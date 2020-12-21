@@ -1,6 +1,5 @@
 import React from "react";
 import IndexForm from "./IndexForm";
-import { Form } from "reactstrap";
 
 function Home() {
   return (

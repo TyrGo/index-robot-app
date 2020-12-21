@@ -26,18 +26,26 @@ main {
 }
 
 .image {
-    height: 10em;
-    border-radius: 40%;
-    mask: url(mask.svg);
+  height: 10em;
+  border-radius: 40%;
+  mask: url(mask.svg);
 }
 
 .txtpic {
+    border-radius: 10px;
     height: 100px;
 }
 
 .help {
-    margin: 0%;
-    margin-left: 20%;
+  margin: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.about {
+  margin: 0%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 h3 {
@@ -53,9 +61,8 @@ p {
   text-align: justify;
 }
 
-.thanks {
-    text-align: center;
-
+.center {
+  text-align: center;
 }
 
 .bios {
@@ -64,7 +71,7 @@ p {
 }
 
 .bio {
-    padding: 3%;
+  padding: 3%;
 }
 
 h4 {
@@ -127,16 +134,39 @@ h4 {
   justify-content: center;
 }
 
+.StripeElement {
+  height: 40px;
+  padding: 10px 12px;
+  width: 100%;
+  color: white;
+  background-color:  rgba(0, 0, 0, 0.301);;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
 #myVideo {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
-  width: 100%;
+  min-width: 100%;
   min-height: 100%;
   background: black;
   opacity: 0.3;
-  position: absolute;
   z-index: 0;
   text-align: center;
   margin: 0%;
 }
+
+
