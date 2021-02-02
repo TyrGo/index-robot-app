@@ -1,19 +1,21 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import { Button, Form, FormGroup, Input, InputGroup, InputGroupAddon, FormFeedback } from 'reactstrap';
 import IndexApi from "./Api";
 
 
 function CheckOutForm() {
-  const [submission, setSubmission] = useState({ email: undefined, amount: undefined})
+  const [submission, setSubmission] = useState({ email: '', amount: ''})
+  const history = useHistory();
 
   const stripe = useStripe();
   const elements = useElements();
 
+
   function handleChange(evt) {
     let { name, value } = evt.target;
     setSubmission(oldSubmission => ({ ...oldSubmission, [name]: value }));
-    console.log("changing??????", submission) //to remove
   }
 
   const handleSubmit = async (event) => {
@@ -25,10 +27,12 @@ function CheckOutForm() {
     if (result.error) {
       // Show error to your customer (e.g., insufficient funds) // maybe set error state; if error in state; render alert above button
       console.log(result.error.message);
+      history.push("/error");
     } else {
       // The payment has been processed!
       if (result.paymentIntent.status === 'succeeded') {
         console.log("success!!!")
+        history.push('/thanks')
         // Show a success message to your customer
         // There's a risk of the customer closing the window before callback
         // execution. Set up a webhook or plugin to listen for the

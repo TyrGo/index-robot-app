@@ -94,6 +94,10 @@ h4 {
   font-family: Courier, monospace;
 }
 
+.link {
+    text-decoration: none;
+}
+
 .list-group a {
   margin-top: 1rem;
   border-left: 5px dotted;
